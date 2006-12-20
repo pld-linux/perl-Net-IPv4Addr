@@ -6,6 +6,7 @@
 %define	pdir	Net
 %define	pnam	IPv4Addr
 Summary:	Net::IPv4Addr - Perl extension for manipulating IPv4 addresses
+Summary(pl):	Net::IPv4Addr - rozszerzenie Perla do obróbki adresów IPv4
 Name:		perl-Net-IPv4Addr
 Version:	0.10
 Release:	1
@@ -25,6 +26,12 @@ Net::IPv4Addr provides functions for parsing IPv4 addresses both in
 traditional address/netmask format and in the new CIDR format. There
 are also methods for calculating the network and broadcast address and
 also to see check if a given address is in a specific network.
+
+%description -l pl
+Net::IPv4Addr udostêpnia funkcje do analizy adresów IPv4 zarówno w
+tradycyjnym formacie adres/maska, jak i nowym formacie CIDR. Zawiera
+tak¿e metody do obliczania adresu sieci i rozg³oszeniowego oraz
+sprawdzania, czy dany adres nale¿y do okre¶lonej sieci.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -49,8 +56,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/ipv4calc
-%{_mandir}/man1/ipv4calc.1p*
-%{_mandir}/man3/Net::IPv4Addr.3pm*
 %{perl_vendorlib}/Net/IPv4Addr.pm
 %dir %{perl_vendorlib}/auto/Net/IPv4Addr
 %{perl_vendorlib}/auto/Net/IPv4Addr/autosplit.ix
+%{_mandir}/man1/ipv4calc.1p*
+%{_mandir}/man3/Net::IPv4Addr.3pm*

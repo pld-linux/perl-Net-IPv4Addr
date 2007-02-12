@@ -6,7 +6,7 @@
 %define	pdir	Net
 %define	pnam	IPv4Addr
 Summary:	Net::IPv4Addr - Perl extension for manipulating IPv4 addresses
-Summary(pl.UTF-8):   Net::IPv4Addr - rozszerzenie Perla do obróbki adresów IPv4
+Summary(pl.UTF-8):	Net::IPv4Addr - rozszerzenie Perla do obróbki adresów IPv4
 Name:		perl-Net-IPv4Addr
 Version:	0.10
 Release:	1

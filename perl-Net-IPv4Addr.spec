@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	IPv4Addr
 Summary:	Net::IPv4Addr - Perl extension for manipulating IPv4 addresses
